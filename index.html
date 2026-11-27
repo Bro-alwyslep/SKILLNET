@@ -1,1 +1,164 @@
 Test
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSwap — Tukar Keahlian</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            color: #1f2937;
+            background: #f8fafc;
+            line-height: 1.6;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: white;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .logo {
+            color: #2563eb;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        
+        nav a {
+            margin-left: 20px;
+            color: #374151;
+            text-decoration: none;
+        }
+        
+        .hero {
+            padding: 80px 8%;
+            text-align: center;
+            background: #eff6ff;
+        }
+        
+        .hero h1 {
+            margin-bottom: 16px;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+        }
+        
+        .hero p {
+            max-width: 600px;
+            margin: 0 auto 24px;
+            color: #4b5563;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 12px 22px;
+            color: white;
+            background: #2563eb;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .skills {
+            padding: 50px 8%;
+        }
+        
+        .skills h2 {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        
+        .card {
+            padding: 24px;
+            background: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+        }
+        
+        .card h3 {
+            margin-bottom: 8px;
+            color: #1d4ed8;
+        }
+        
+        .card p {
+            margin-bottom: 16px;
+            color: #6b7280;
+        }
+        
+        footer {
+            padding: 24px;
+            text-align: center;
+            color: #6b7280;
+            background: white;
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">SkillSwap</div>
+
+        <nav>
+            <a href="#beranda">Beranda</a>
+            <a href="#keahlian">Keahlian</a>
+            <a href="#tentang">Tentang</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="beranda">
+            <h1>Belajar Bersama, Bertukar Keahlian</h1>
+            <p>
+                SkillSwap menghubungkan orang-orang yang ingin berbagi kemampuan dan belajar keahlian baru dari satu sama lain.
+            </p>
+            <a class="button" href="#keahlian">Jelajahi Keahlian</a>
+        </section>
+
+        <section class="skills" id="keahlian">
+            <h2>Keahlian yang Bisa Dipelajari</h2>
+
+            <div class="card-container">
+                <article class="card">
+                    <h3>Desain Grafis</h3>
+                    <p>Belajar membuat desain, poster, dan konten visual.</p>
+                    <a href="#tentang">Lihat detail</a>
+                </article>
+
+                <article class="card">
+                    <h3>Pemrograman Web</h3>
+                    <p>Belajar dasar HTML, CSS, dan JavaScript.</p>
+                    <a href="#tentang">Lihat detail</a>
+                </article>
+
+                <article class="card">
+                    <h3>Bahasa Inggris</h3>
+                    <p>Latih kemampuan percakapan dan menulis dalam bahasa Inggris.</p>
+                    <a href="#tentang">Lihat detail</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer id="tentang">
+        <p>© 2026 SkillSwap. Berbagi keahlian, tumbuh bersama.</p>
+    </footer>
+</body>
+
+</html>
